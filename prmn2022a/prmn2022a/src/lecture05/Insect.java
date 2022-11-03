@@ -1,6 +1,6 @@
 package lecture05;
 
-public class Insert {
+public class Insect {
     void move(){
         System.out.println("歩いたよ");
     }
