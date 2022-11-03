@@ -1,7 +1,7 @@
 package lecture05;
 
 public class Insect {
-    void move(){
+    public void move(){
         System.out.println("歩いたよ");
     }
 }
