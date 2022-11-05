@@ -17,7 +17,7 @@ public class Monster implements IMonster{
         this.power = power;
         this.defense = defense;
         this.speed = speed;
-        this.skills.addAll(skills);
+        this.skills = skills;
     }
 
     protected Monster(IMonster monster){
