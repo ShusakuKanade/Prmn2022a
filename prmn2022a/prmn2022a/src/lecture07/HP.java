@@ -11,8 +11,4 @@ public class HP {
     public int getHP(){
         return this.hp;
     }
-
-    public void setHP(int hp){
-        this.hp = hp;
-    }
 }
