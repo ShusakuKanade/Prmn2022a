@@ -1,10 +1,10 @@
 package lecture07;
 
 public class Field implements IBattleMonster{
-    private IBattleMonster pLayerMonster;
+    private IBattleMonster playerMonster;
     private IBattleMonster enemyMonster;
 
-    public Field(PlayerMonster pLayerMonster,EnemyMonster enemyMonster){
+    public Field(PlayerMonster playerMonster,EnemyMonster enemyMonster){
 
     }
 
