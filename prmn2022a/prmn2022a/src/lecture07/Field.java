@@ -50,6 +50,8 @@ public class Field implements IBattleMonster{
 
     //private boolean Turn(IBattleMonster first,IBattleMonster second){}
 
-    //private int commandSelectPhase(IBattleMonster command){}
+    private int commandSelectPhase(IBattleMonster command){
+        return command.skillSelect();
+    }
 
 }
