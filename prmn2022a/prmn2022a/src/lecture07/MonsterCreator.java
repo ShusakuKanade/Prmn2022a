@@ -11,12 +11,15 @@ public enum MonsterCreator{
 
     private int id;
     private Supplier<Monster> supplier;
-    private static Map<Integer, lecture07.MonsterCreator> map = new HashMap<Integer, lecture07.MonsterCreator>();
+    private static Map<Integer, Monster> map = new HashMap<>();
 
     MonsterCreator(int id){this.id = id;}
     public static void viewMonsterList(){
-        for(lecture07.MonsterCreator monsters: lecture07.MonsterCreator.values()){
-            System.out.println(monsters.id + "->" + monsters);
+        map.put(MONKEY.id, new Monkey());
+        map.put(PENGUIN.id, new Penguin());
+        map.put(TURTLE.id, new Turtle());
+        for(int i = 0;i<3;i++){
+            System.out.println(i + " -> " + map.get(i));
         }
     }
 
