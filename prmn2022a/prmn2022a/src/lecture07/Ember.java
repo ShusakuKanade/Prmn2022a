@@ -6,6 +6,7 @@ public class Ember extends Skill{
         return "ひのこ";
     }
 
+    @Override
     public int getPower(){
         return 10;
     }

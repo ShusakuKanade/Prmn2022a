@@ -6,6 +6,7 @@ public class Bubble extends Skill{
         return "あわ";
     }
 
+    @Override
     public int getPower(){
         return 10;
     }

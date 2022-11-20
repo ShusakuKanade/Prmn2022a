@@ -6,6 +6,7 @@ public class Tackle extends Skill{
         return "たいあたり";
     }
 
+    @Override
     public int getPower(){
         return 10;
     }

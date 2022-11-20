@@ -6,6 +6,7 @@ public class Scratch extends Skill{
         return "ひっかく";
     }
 
+    @Override
     public int getPower(){
         return 10;
     }

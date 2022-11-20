@@ -6,6 +6,7 @@ public class Peck extends Skill{
         return "つつく";
     }
 
+    @Override
     public int getPower(){
         return 15;
     }

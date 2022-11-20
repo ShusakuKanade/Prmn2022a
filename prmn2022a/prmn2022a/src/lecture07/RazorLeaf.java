@@ -6,6 +6,7 @@ public class RazorLeaf extends Skill{
         return "はっぱカッター";
     }
 
+    @Override
     public int getPower(){
         return 12;
     }
