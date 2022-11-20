@@ -6,9 +6,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         MonsterCreator.viewMonsterList();
-        System.out.print("モンスターを選べ:");
-        stdinMonsterId();
-        randomMonsterId();
+        //System.out.print("モンスターを選べ:");
+
 
     }
 
