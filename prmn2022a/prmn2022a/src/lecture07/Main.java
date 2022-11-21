@@ -7,6 +7,9 @@ public class Main {
     public static void main(String[] args) {
         MonsterCreator.viewMonsterList();
         //System.out.print("モンスターを選べ:");
+        Field field = new Field(
+                new PlayerMonster(MonsterCreator.setMonster(stdinMonsterId())),
+                new EnemyMonster(MonsterCreator.setMonster(randomMonsterId())));
 
 
     }
