@@ -5,7 +5,8 @@ public class Field implements IBattleMonster{
     private IBattleMonster enemyMonster;
 
     public Field(PlayerMonster playerMonster,EnemyMonster enemyMonster){
-
+        this.playerMonster = playerMonster;
+        this.enemyMonster = enemyMonster;
     }
 
     private void battle(){
