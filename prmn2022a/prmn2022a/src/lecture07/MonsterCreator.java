@@ -5,21 +5,22 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public enum MonsterCreator{
-    MONKEY(1,new Monkey()),
-    PENGUIN(2,new Penguin()),
-    TURTLE(3,new Turtle());
+    MONKEY(1),
+    PENGUIN(2),
+    TURTLE(3);
 
     private int id;
     private Supplier<Monster> supplier;
     private static Map<Integer, MonsterCreator> map = new HashMap<>();
 
-    MonsterCreator(int id,Monster monster){
+    MonsterCreator(int id){
+        this.id = id;
     }
 
     public static void viewMonsterList(){
-        map.put(1, MONKEY);
-        map.put(2, PENGUIN);
-        map.put(3, TURTLE);
+        for(MonsterCreator monsterCreators:MonsterCreator.values()){
+            map.put(monsterCreators.id, monsterCreators);
+        }
         for(Map.Entry<Integer,MonsterCreator> entry:map.entrySet()){
             System.out.println(entry.getKey() + "->" + entry.getValue());
         }
