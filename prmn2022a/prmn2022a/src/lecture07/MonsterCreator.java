@@ -5,16 +5,17 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public enum MonsterCreator{
-    MONKEY(1),
-    PENGUIN(2),
-    TURTLE(3);
+    MONKEY(1,new Monkey()),
+    PENGUIN(2,new Penguin()),
+    TURTLE(3,new Turtle());
 
     private int id;
     private Supplier<Monster> supplier;
     private static Map<Integer, MonsterCreator> map = new HashMap<>();
 
-    MonsterCreator(int id){
+    MonsterCreator(int id,Monster monster){
         this.id = id;
+        supplier = ()->monster;
     }
 
     public static void viewMonsterList(){
