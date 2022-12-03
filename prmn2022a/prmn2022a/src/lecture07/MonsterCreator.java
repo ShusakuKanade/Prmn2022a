@@ -17,9 +17,9 @@ public enum MonsterCreator{
     }
 
     public static void viewMonsterList(){
-        map.put(MONKEY.id, MONKEY);
-        map.put(PENGUIN.id, PENGUIN);
-        map.put(TURTLE.id, TURTLE);
+        map.put(1, MONKEY);
+        map.put(2, PENGUIN);
+        map.put(3, TURTLE);
         for(Map.Entry<Integer,MonsterCreator> entry:map.entrySet()){
             System.out.println(entry.getKey() + "->" + entry.getValue());
         }
