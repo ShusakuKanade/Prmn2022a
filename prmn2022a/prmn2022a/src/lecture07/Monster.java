@@ -33,7 +33,7 @@ public class Monster extends HP implements IMonster{
     }
 
     public void setHP(int hp){
-
+        super.setHP(hp);
     }
 
     public int getPower(){
